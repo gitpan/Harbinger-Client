@@ -2,7 +2,7 @@ NAME
     Harbinger::Client - Impend all the doom you could ever want â
 
 VERSION
-    version 0.001000
+    version 0.001001
 
 SYNOPSIS
      my $client = Harbinger::Client->new(

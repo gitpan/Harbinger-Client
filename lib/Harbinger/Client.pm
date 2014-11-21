@@ -1,5 +1,5 @@
 package Harbinger::Client;
-$Harbinger::Client::VERSION = '0.001000';
+$Harbinger::Client::VERSION = '0.001001';
 # ABSTRACT: Impend all the doom you could ever want ⚔
 
 use v5.16.1;
@@ -70,7 +70,7 @@ sub send {
    no warnings;
    &try(sub{
       send($self->_udp_handle, $msg, 0) == length($msg)
-         or warn "cannot send to: $!";
+         or $ENV{HARBINGER_WARNINGS} && warn "cannot send to: $!";
    },($ENV{HARBINGER_WARNINGS}?(catch {
       warn $_;
    }):()));
@@ -90,7 +90,7 @@ Harbinger::Client - Impend all the doom you could ever want â
 
 =head1 VERSION
 
-version 0.001000
+version 0.001001
 
 =head1 SYNOPSIS
 

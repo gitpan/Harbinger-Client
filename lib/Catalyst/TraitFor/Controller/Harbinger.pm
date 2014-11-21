@@ -1,5 +1,5 @@
 package Catalyst::TraitFor::Controller::Harbinger;
-$Catalyst::TraitFor::Controller::Harbinger::VERSION = '0.001000';
+$Catalyst::TraitFor::Controller::Harbinger::VERSION = '0.001001';
 use Moo::Role;
 use warnings NONFATAL => 'all';
 

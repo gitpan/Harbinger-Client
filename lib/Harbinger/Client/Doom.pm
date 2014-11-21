@@ -1,5 +1,5 @@
 package Harbinger::Client::Doom;
-$Harbinger::Client::Doom::VERSION = '0.001000';
+$Harbinger::Client::Doom::VERSION = '0.001001';
 use List::Util 'first';
 use Module::Runtime 'use_module';
 use Sereal::Encoder 'encode_sereal';

@@ -1,5 +1,5 @@
 package Plack::Middleware::Harbinger;
-$Plack::Middleware::Harbinger::VERSION = '0.001000';
+$Plack::Middleware::Harbinger::VERSION = '0.001001';
 use Moo;
 use warnings NONFATAL => 'all';
 
